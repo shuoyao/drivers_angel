@@ -83,9 +83,8 @@ public class SettingsActivity extends Activity {
                 serviceIntent.putExtra("speed_tolerance", speed_tolerance);
                 serviceIntent.putExtra("sleep_interval", sleep_interval);
                 startService(serviceIntent);
-
-                // should be DrivingActivity, change it to VoiceActivity for testing
-                Intent intent = new Intent(getApplicationContext(), VoiceActivity.class);
+                
+                Intent intent = new Intent(getApplicationContext(), DrivingActivity.class);
                 intent.putExtra("sleep", sleep_interval);
                 intent.putExtra("speed", speed_tolerance);
                 intent.putExtra("firstbool", firstBool);
