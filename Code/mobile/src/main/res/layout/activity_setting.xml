@@ -1,0 +1,252 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+
+    tools:context=".MainActivity">
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height= "70dp"
+        android:layout_marginTop="20dp"
+        android:tint="@color/wallet_holo_blue_light"
+        android:src="@drawable/car"/>
+
+    <android.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="5dp"
+        android:title="Driving with "
+        android:titleTextColor="#ffffff"
+        android:background="@color/wallet_holo_blue_light"/>
+
+    <!--<ImageView android:id="@+id/setting_driving" android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" android:layout_centerHorizontal="true"-->
+        <!--android:src="@drawable/setting"-->
+        <!--android:layout_centerVertical="true" />-->
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/my_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:elevation="4dp"-->
+        <!--android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>-->
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>-->
+    <TextView
+        android:id="@+id/sleep_alert_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sleep Alert"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:textColor="@color/wallet_holo_blue_light"/>
+
+    <SeekBar
+        android:id="@+id/sleep_alert"
+        android:thumb="@drawable/apptheme_scrubber_control_focused_holo"
+        android:progressDrawable="@drawable/apptheme_scrubber_progress_horizontal_holo_light"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:max="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id= "@+id/sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:gravity="left"
+            android:paddingRight="200dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Hrs"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="#FF909090" />
+
+    <TextView
+        android:id="@+id/speed_alert_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Speed Alert"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:textColor="@color/wallet_holo_blue_light"/>
+
+    <SeekBar
+        android:id="@+id/speed_alert"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:thumb="@drawable/apptheme_scrubber_control_focused_holo"
+        android:progressDrawable="@drawable/apptheme_scrubber_progress_horizontal_holo_light"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:max="15"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id= "@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="None"
+            android:gravity="left"
+            android:paddingRight="250dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15%\n over"
+            android:layout_gravity="right"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="#FF909090" />
+
+    <android.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:title="Blocked Notifications: "
+        android:titleTextColor="#ffffff"
+        android:background="@color/wallet_holo_blue_light"/>
+
+
+    <TextView
+        android:id="@+id/disable_notification_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Disable Notifications"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:text="Text Message         "/>
+
+
+        <Switch
+            android:id="@+id/mySwitch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:thumb="@drawable/apptheme_switch_thumb_pressed_holo_light"
+            android:track="@drawable/apptheme_switch_bg_holo_light"
+            android:textOff="Off"
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:text="Social Media Apps"/>
+
+
+        <Switch
+            android:id="@+id/mySwitch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:thumb="@drawable/apptheme_switch_thumb_pressed_holo_light"
+            android:track="@drawable/apptheme_switch_bg_holo_light"
+            android:textOff="Off"
+            android:textSize="15dp"
+            android:textColor="#000000"/>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="10dp"
+        android:background="#FF909090" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="START"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:background="@color/wallet_holo_blue_light"/>
+
+
+
+</LinearLayout>
